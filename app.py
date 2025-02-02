@@ -2,9 +2,15 @@ from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost:27017/internships')
+
+
+# Initialize CORS
+CORS(app)
+
 
 # Connect to MongoDB
 client = MongoClient(app.config["MONGO_URI"])
