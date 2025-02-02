@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Applications Received</h1>
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        {% for app in applications %}
+        <tr>
+            <td>{{ app.position }}</td>
+            <td>{{ app.name }}</td>
+            <td>{{ app.email }}</td>
+            <td>{{ app.status }}</td>
+            <td>
+                <a href="#">View Details</a>
+                <a href="#">Update Status</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

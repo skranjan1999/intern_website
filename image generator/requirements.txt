@@ -1,0 +1,13 @@
+Flask
+torch
+torchvision
+torchaudio
+diffusers
+transformers
+accelerate
+safetensors
+pillow
+opencv-python
+imageio[ffmpeg]
+modelscope
+flask-cors

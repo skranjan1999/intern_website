@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CodTech IT Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .content-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+        .content-item {
+            flex: 1 1 30%; /* Allows items to shrink but stay within 30% of the row */
+            margin: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            max-width: 300px; /* Limit image size */
+            object-fit: cover;
+            margin-bottom: 15px; /* Space between image and text */
+        }
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(135deg, #004080, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: #f0f4f8;
+        }
+
+        footer p strong {
+            color: #ffcc00;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            font-size: 2.5rem; /* Increase the font size */
+            transition: color 0.3s ease, transform 0.3s ease;
+            transform: scale(1.5); /* Scale the icon size */
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CODTECH IT SOLUTIONS</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Careers ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#content-section reverse">Internships</a></li>
+                        <li><a href="#">Full-Time Jobs</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div> <!-- Mobile Menu Icon -->
+        </nav>
+    </header>
+    <div class="container">
+        <h1>About CodTech IT Solutions</h1>
+        
+        <div class="content-row">
+            <div class="content-item">
+                <img src="{{ url_for('static', filename='A1.jpg') }}" alt="Mission Image" onerror="this.style.display='none';">
+                <h2>Our Mission</h2>
+                <p>Empowering Businesses through Innovative IT Services and Consulting</p>
+                <p>At CodTech IT Solutions, our mission is to empower businesses with innovative IT services and consulting. We deliver customized, reliable, and cost-effective technology solutions to help clients achieve their goals. Our commitment to excellence builds lasting partnerships and drives success in a digital landscape.</p>
+            </div>
+            <div class="content-item">
+                <img src="{{ url_for('static', filename='A2.jpg') }}" alt="Vision Image" onerror="this.style.display='none';">
+                <h2>Our Vision</h2>
+                <p>Shaping the Future of Technology</p>
+                <p>Our vision at CodTech IT Solutions is to be a global leader in IT services and consulting. We aim to shape the future of technology with innovation, quality, and a customer-centric approach. Through continuous learning and collaboration, we inspire and lead our clients towards a connected and sustainable future.</p>
+            </div>
+            <div class="content-item">
+                <img src="{{ url_for('static', filename='A3.jpg') }}" alt="Approach Image" onerror="this.style.display='none';">
+                <h2>Our Approach</h2>
+                <p>Our Winning Approach</p>
+                <p>We focus on understanding clients' unique needs, delivering innovative and tailored IT solutions. Through strong partnerships and a commitment to quality, we ensure reliable, high-performance results. Continuously improving, we stay ahead of industry trends to drive client success.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © 2024 CODTECH IT SOLUTIONS - All Rights Reserved.</p>
+            <p>No refunds or returns are allowed.</p>
+            <p>Powered by <strong>CODTECH IT SOLUTIONS</strong></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/codtechitsolutions" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/codtechitsolutions" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/codtechitsolutions" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

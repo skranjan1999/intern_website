@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Program | CODTECH IT SOLUTIONS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">CODTECH IT SOLUTIONS</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Careers ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#content-section reverse">Internships</a></li>
+                        <li><a href="#">Full-Time Jobs</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div> <!-- Mobile Menu Icon -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ONLINE INTERNSHIP PROGRAM-2025</h1>
+
+        </div>
+    </section>
+
+    <!-- Left Photo + Right Text Section -->
+    <section class="content-section">
+        <div class="photo">
+            <img src="{{ url_for('static', filename='1.jpg') }}" alt="Internship Program">
+        </div>
+        <div class="text">
+            <h2>Welcome, Interns!</h2>
+            <p>
+                Welcome, interns, to the most prestigious internship opportunity with CODTECH, a certified company
+                recognized by MSME, AICTE, ISO, and trademark registered, and an AWS and Google partner. We're excited
+                to have you on board and look forward to a rewarding and enriching experience together.
+            </p>
+        </div>
+    </section>
+
+    <!-- Right Photo + Left Text Section -->
+    <section id="content-section reverse" class="content-section reverse">
+        <div class="photo">
+            <img src="{{ url_for('static', filename='2.jpg') }}" alt="Available Positions">
+        </div>
+        <div class="text">
+            <h3>The Available Positions Are As Follows: 🚀</h3>
+            <ul>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">React.js Web Development
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">MERN Stack Web Development
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">Pyhton Programming
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">DevOps Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">Site Reliability Engineer
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">Full Stack Web Development
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">Frontend Web Development
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">Backend Web Development
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">C, C++ Programming
+                        Intern</a></li>
+                <li><a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">Software Development
+                        Intern</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section class="content-section">
+        <div class="photo">
+            <img src="{{ url_for('static', filename='6.jpg') }}" alt="Internship Program">
+        </div>
+        <div class="text">
+            <h2>What We Offer: 🚀</h2>
+            <h3>Internship Offer Letter and Completion Certificate🚀:</h3>
+            <ul>Formal recognition of your dedication and achievement during the internship.
+            </ul>
+
+            <h3>Mode of Internship 🚀: </h3>
+            <p>Work from home (online)</p>
+            <h3>Work Time🚀:</h3>
+            <p>Work at your free time and submit the tasks within deadline.</p>
+
+
+            <h3>Placement Support🚀: </h3>
+            <p>We provide resources and assistance to help you secure job opportunities.</p>
+
+            <h3>Interview training🚀:</h3>
+            <p>We provide Aptitude and Technical assistance to help you secure job opportunities.</p>
+            <h3>Projects🚀:</h3>
+            <p>Gain hands-on experience through industrial projects to enhance practical skills.</p>
+
+
+        </div>
+    </section>
+
+    <!-- Internship Positions Section -->
+    <!-- <section class="internships">
+        <h2>Available Internship Positions</h2>
+        <div class="internship-list">
+            <a href="/apply/reactjs-web-development" >
+                <div class="internship-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>React.js Web Development</h3>
+                    
+                </div>
+            </a>
+            <div class="internship-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>React.js Web Development</h3>
+                <a href="/apply/reactjs-web-development" class="btn"></a>
+            </div>
+            <div class="internship-card">
+                <i class="fas fa-code"></i>
+                <h3>MERN Stack Development</h3>
+                <a href="/apply/reactjs-web-development" class="btn">Apply Now</a>
+            </div>
+            <div class="internship-card">
+                <i class="fas fa-python"></i>
+                <h3>Python Programming</h3>
+                <a href="/apply/reactjs-web-development" class="btn">Apply Now</a>
+            </div>
+            <div class="internship-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Science</h3>
+                <a href="/apply/reactjs-web-development" class="btn">Apply Now</a>
+            </div>
+            <div class="internship-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <a href="/apply/reactjs-web-development" class="btn">Apply Now</a>
+            </div>
+            <div class="internship-card">
+                <i class="fas fa-robot"></i>
+                <h3>Machine Learning & AI</h3>
+                <a href="/apply/reactjs-web-development" class="btn">Apply Now</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- What We Offer Section -->
+    <!-- <section class="benefits">
+        <h2>What We Offer: 🚀</h2>
+        <div class="benefits-list">
+            <div class="benefit-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Completion Certificate</h3>
+                <p>Get recognized for your hard work.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-home"></i>
+                <h3>Work From Home</h3>
+                <p>Flexible hours to suit your schedule.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Real-World Projects</h3>
+                <p>Gain practical experience.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Why Choose CODTECH Section -->
+    <section class="why-choose">
+        <h2>Why Choose CODTECH? 🚀</h2>
+        <p>Our certifications by the government ensure credibility and trust. Check out our sample offer letters and
+            certificates below:</p>
+        <div class="certificates">
+            <div class="certificate">
+                <h3>Get QR Verified Offer Letter</h3>
+                <img src="{{ url_for('static', filename='3.jpg') }}" alt="Sample Offer Letter">
+            </div>
+            <div class="certificate">
+                <h3>Get QR Verified Certificate</h3>
+                <img src="{{ url_for('static', filename='4.jpg') }}" alt="Sample Certificate">
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <!-- Apply Section -->
+    <section class="apply">
+        <h2>Apply for the Internship Through Below Links</h2>
+
+        <a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">APPLY NOW FOR 4 WEEKS INTERNSHIP</a>
+        <a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">APPLY NOW FOR 6 WEEKS INTERNSHIP</a>
+        <a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">APPLY NOW FOR 8 WEEKS INTERNSHIP</a>
+        <a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">APPLY NOW FOR 12 WEEKS INTERNSHIP</a>
+        <a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">APPLY NOW FOR 16 WEEKS INTERNSHIP</a>
+        <a href="https://forms.gle/QvFUhR85EJ1QyapVA" class="btn" target="_blank">MORE THAN 16 WEEKS CLICK ME</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © 2024 CODTECH IT SOLUTIONS - All Rights Reserved.</p>
+            <p>No refunds or returns are allowed.</p>
+            <p>Powered by <strong>CODTECH IT SOLUTIONS</strong></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/codtechitsolutions" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/codtechitsolutions" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/codtechitsolutions" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
